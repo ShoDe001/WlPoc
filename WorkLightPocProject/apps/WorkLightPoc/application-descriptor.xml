@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Licensed Materials - Property of IBM
+			 5725-G92 (C) Copyright IBM Corp. 2006, 2013. All Rights Reserved.
+			 US Government Users Restricted Rights - Use, duplication or
+             disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
+<!-- Attribute "id" must be identical to application folder name -->
+<application xmlns="http://www.worklight.com/application-descriptor" id="WorkLightPoc" platformVersion="5.0.6">
+    <displayName>WorkLightPoc</displayName>
+    <description>WorkLightPoc</description>
+    <author>
+        <name>Bundit Rattanung</name>
+        <email>bundit.r@cdg.co.th</email>
+        <homepage>http://cdgs.cdg.co.th</homepage>
+        <copyright>Copyright CDG System Ltd.</copyright>
+    </author>
+    <height>460</height>
+    <width>320</width>
+    <mainFile>WorkLightPoc.html</mainFile>
+    <thumbnailImage>common/images/thumbnail.png</thumbnailImage>
+    <mobileWebApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:type="EnvironmentWithSkinDescriptor"/>
+    <worklightServerRootURL>http://${local.IPAddress}:8080</worklightServerRootURL>
+</application>

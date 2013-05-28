@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>WorkLightPoc</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/WorkLightPoc.css">
+	<script>window.$ = window.jQuery = WLJQ;</script>
+	<script type="text/javascript" data-dojo-config="isDebug: false, async: true, parseOnLoad: true, mblHideAddressBar: false" src="dojo/dojo.js"></script>
+</head>
+<body id="content" style="display: none;"><div data-dojo-type="dojox.mobile.ScrollableView" id="view0" data-dojo-props="selected:true"></div>
+<div data-dojo-type="dojox.mobile.View" id="mainMenuView">	
+			<div id="featureContainer" data-dojo-type="dojox.mobile.View" selected="true">
+				<div id="featurePane" data-dojo-type="dojox.mobile.ContentPane" href="views/featureView.html"></div>
+			</div>
+			<div id="categoryContainer" data-dojo-type="dojox.mobile.View" >
+				<div id="categoryPane" data-dojo-type="dojox.mobile.ContentPane" href="views/categoryView.html"></div>
+			</div>
+			<div id="toprateContainer" data-dojo-type="dojox.mobile.View">
+				<div id="topratePane" data-dojo-type="dojox.mobile.ContentPane" href="views/topView.html"></div>
+			</div>
+			<div id="searchContainer" data-dojo-type="dojox.mobile.View" >
+				<div id="searchPane" data-dojo-type="dojox.mobile.ContentPane" href="views/searchView.html"></div>
+			</div>
+			<div id="cordovaContainer" data-dojo-type="dojox.mobile.View" >
+				<div id="cordovaPane" data-dojo-type="dojox.mobile.ContentPane" href="views/cordovaView.html"></div>
+			</div>			
+		</div>
+	<ul data-dojo-type="dojox.mobile.TabBar" data-dojo-props='fixed:"bottom"' style="border-bottom:none;">
+		<li data-dojo-type="dojox.mobile.TabBarButton" data-dojo-props='icon1:"images/btn_feat.png", icon2:"images/btn_feat_selected.png", selected:true, moveTo:"featureContainer"'>Feature</li>
+		<li data-dojo-type="dojox.mobile.TabBarButton" data-dojo-props='icon1:"images/btn_cate.png", icon2:"images/btn_cate_selected.png", moveTo:"categoryContainer"' onclick="homeController.handleCategory()">Category</li>
+		<li data-dojo-type="dojox.mobile.TabBarButton" data-dojo-props='icon1:"images/btn_top.png", icon2:"images/btn_top_selected.png", moveTo:"toprateContainer"'  onclick="homeController.handleToprate()">Top rate</li>
+		<li data-dojo-type="dojox.mobile.TabBarButton" data-dojo-props='icon1:"images/btn_sear.png", icon2:"images/btn_sear_selected.png", moveTo:"searchContainer"'  onclick="homeController.handleSearch()">Search</li>
+		<li data-dojo-type="dojox.mobile.TabBarButton" data-dojo-props='icon1:"images/logo_cordova.png", icon2:"images/logo_cordova_selected.png", moveTo:"cordovaContainer"'  onclick="homeController.handleCordova()">Cordova</li>
+	</ul>
+	<!--application UI goes here-->
+	<script src="js/initOptions.js"></script>
+	<script src="js/WorkLightPoc.js"></script>
+	<script src="js/messages.js"></script>
+</body>
+</html>

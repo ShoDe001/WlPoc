@@ -1,0 +1,19 @@
+	<div id="cordovaView" data-dojo-type="dojox.mobile.ScrollableView" selected="true">	
+	
+	<h1 data-dojo-type="dojox.mobile.Heading" class="miViewHeader" label="Cordova API" fixed="top">
+	</h1>
+	
+	<div align="center">
+	</div data-dojo-type="dojox.mobile.EdgeToEdgeList">
+		<div data-dojo-type="dojox.mobile.RoundRect" shadow="true" style="height:120px;vertical-align: middle;padding-top: 0px;padding-left: 0px;padding-right: 0px;">
+			<h4 data-dojo-type="dojox.mobile.Heading" data-dojo-props='fixed:"top"' style="border-radius:8px 8px 0px 0px">GeoLocation</h4>
+			<div>latitude : <input type="text" id="latitude" name="latitude" data-dojo-type="dojox.mobile.TextBox" placeHolder="Latitude" /></div>
+			<div>longitude :<input type="text" id="longitude" name="longitude" data-dojo-type="dojox.mobile.TextBox" placeHolder="Longitude" /></div>
+			<div style="float:right;margin-right:10px;"><button data-dojo-type="dojox.mobile.Button" class="mblBlueButton" id="geoLocationButton">Locate</button></div>
+		</div>
+		<div data-dojo-type="dojox.mobile.RoundRect" shadow="true" style="height:200px;vertical-align: middle;padding-top: 0px;padding-left: 0px;padding-right: 0px;">
+			<h4 data-dojo-type="dojox.mobile.Heading" data-dojo-props='fixed:"top"' style="border-radius:8px 8px 0px 0px">Camera</h4>
+			<div id="captureImageView" style="white-space:nowrap" data-dojo-type="dojox.mobile.ScrollableView" height="120px" width="100%" data-dojo-props='scrollDir:"h"'></div>
+			<div style="float:right;margin-right:10px;"><button data-dojo-type="dojox.mobile.Button" class="mblBlueButton" id="cameraButton">Camera</button></div>
+		</div>
+	</div>

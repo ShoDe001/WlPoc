@@ -1,0 +1,10 @@
+	<div id="searchView" data-dojo-type="dojox.mobile.View" selected="true" align="center">	
+	<h1 data-dojo-type="dojox.mobile.Heading" class="miViewHeader" label="Search">
+	</h1>
+	<input data-dojo-type="dojox/mobile/SearchBox" type="search" style="width:90%;" placeHolder="Search"
+  data-dojo-props='ignoreCase: true' onkeyup="searchController.onSearch(this)" />
+ 	 <div data-dojo-type="dojox.mobile.ScrollableView">
+		<ul id="searchList" data-dojo-type="dojox.mobile.EdgeToEdgeList">
+		</ul>
+		</div>
+	</div>
